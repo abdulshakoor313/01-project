@@ -1,4 +1,5 @@
 import AllProducts from './Components/AllProducts'
+import AllStudents from './Components/AllStudents'
 import MyCard from './Components/MyCard'
 
 
@@ -17,6 +18,7 @@ function App() {
       image="https://images.unsplash.com/photo-1780764895105-ea3037466236?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
       <AllProducts/>
+      <AllStudents/>
 
     </div>
   )
