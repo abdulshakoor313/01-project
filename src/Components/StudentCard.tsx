@@ -10,8 +10,8 @@ type StudentDataTypes = {
 function StudentCard({ image, name, age, clas, section }: StudentDataTypes) {
     return (
         <div>
-            <img src={image} />
-            <h1>Name{name}</h1>
+            <img src={image} className="flex w-3xl h-auto" />
+            <h1 className="text-3xl font-bold ">Name{name}</h1>
             <h2>Age{age}</h2>
             <h3>Class{clas}</h3>
             <h3>Section{section}</h3>
