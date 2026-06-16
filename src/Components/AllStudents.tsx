@@ -9,18 +9,11 @@ const studentData = [
         section: "A",
     }
 ];
-
-
-
-
 const AllStudents = () => (
     <div>
         {studentData.map((item, index) => (
             <StudentCard key={index}{...item} />
         ))}
-
-
-
     </div>
 );
 
