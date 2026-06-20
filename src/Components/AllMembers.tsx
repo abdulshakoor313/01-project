@@ -17,6 +17,7 @@ const AllMembers = () => {
       {Members.map((item,index)=>(
     <TeamMemberCard key={index}{...item}/>
     ))}
+    
     </div>
   )
 }
