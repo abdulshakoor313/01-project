@@ -1,6 +1,6 @@
-import React from 'react'
 
-type TeamMember={
+
+type TeamMember = {
   image: string;
   name : string;
   designation: string;
@@ -8,14 +8,17 @@ type TeamMember={
   email: string;
 }
 
-const TeamMemberCard = ((image,name,designation,department,email)) => {
+const TeamMemberCard = ({image,name,designation,department,email}:TeamMember) => {
   return (
     <div>
-      <img srce={image}/>
+      <img src={image}/>
       <h1>{name}</h1>
       <h2>{designation}</h2>
+      <h3>{department}</h3>
+      <h4>Contact{email}</h4>
     </div>
   )
 }
 
-export default TeamMemberCard
+export default TeamMemberCard;
+
