@@ -7,9 +7,9 @@ const Counter = () => {
     <div>
       <h1>{count}</h1>
 
-      <button onClick={()=>setcount(count+1)}></button>
-      <button onClick={()=>setcount(count-1)}></button>
-      <button onClick={()=>setcount(count)}></button>
+      <button className="bg-red-400 rounded-2xl p-2" onClick={()=>setcount(count+1)}>Increase</button>
+      <button className="bg-red-400 rounded-2xl p-2" onClick={()=>setcount(count-1)}>Decrease</button>
+      <button className="bg-red-400 rounded-2xl p-2" onClick={()=>setcount(count)}>Reset</button>
     </div>
   )
 }
