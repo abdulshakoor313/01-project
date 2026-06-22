@@ -1,8 +1,9 @@
-import AllMembers from './Components/AllMembers'
-import AllProducts from './Components/AllProducts'
-import AllStudents from './Components/AllStudents'
-import Counter from './Components/Counter'
-import MyCard from './Components/MyCard'
+// import AllMembers from './Components/AllMembers'
+// import AllProducts from './Components/AllProducts'
+// import AllStudents from './Components/AllStudents'
+// import Counter from './Components/Counter'
+// import MyCard from './Components/MyCard'
+import UssseEffect from './Components/UssseEffect'
 
 
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="flex flex-wrap justify-center items-center gap-6 bg-gray-100">
            
-      
+{/*       
       <MyCard
       name="Abdul Shakoor"
       description="Frontend developer learning React"
@@ -35,9 +36,8 @@ function App() {
       image="https://images.unsplash.com/photo-1780764895105-ea3037466236?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       designation='CEO'
       email='abc@gmail.com'
-       />
-
-
+       /> */}
+       <UssseEffect/>
     </div>
   )
 }
