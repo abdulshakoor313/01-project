@@ -1,11 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from 'react'
 
 const UssseEffect = () => {
-  useEffect(() => {
+  useEffect(()=>{
+   const [Count, setCount] = useState(0);
+  })
+  return (
+    <div>
+      <h1>{Count}</h1>
+      <button onClick={()=>setCount()=>{}</div>}></button>
+    </div>
+  )
+}
 
-  }, []);
-
-  return <h1>Hello World</h1>;
-};
-
-export default UssseEffect;
+export default UssseEffect
