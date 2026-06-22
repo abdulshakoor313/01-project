@@ -9,7 +9,7 @@ const Counter = () => {
 
       <button className="bg-red-400 rounded-2xl p-2" onClick={()=>setcount(count+1)}>Increase</button>
       <button className="bg-red-400 rounded-2xl p-2" onClick={()=>setcount(count-1)}>Decrease</button>
-      <button className="bg-red-400 rounded-2xl p-2" onClick={()=>setcount(count)}>Reset</button>
+      <button className="bg-red-400 rounded-2xl p-2" onClick={()=>setcount(0)}>Reset</button>
     </div>
   )
 }
