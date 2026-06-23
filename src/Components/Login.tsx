@@ -10,7 +10,7 @@ const Login = () => {
 
   return (
     <div>
-      <form/>
+      <input type="text" placeholder="Please">Email</input>
     </div>
   )
 }
