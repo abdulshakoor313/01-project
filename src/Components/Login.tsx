@@ -11,17 +11,18 @@ const Login = () => {
     return (
         <div>
             <form className="bg-sky-100">
-           
-                <input 
-                type="text" 
-                placeholder="Please inter Email" 
-                className=" border border-black"
+
+
+                <input
+                    type="text"
+                    placeholder="Please inter Email"
+                    className=" border border-black"
                 />
 
-                <input 
-                type="password" 
-                placeholder="Please inter password" 
-                className="border border-black"
+                <input
+                    type="password"
+                    placeholder="Please inter password"
+                    className="border border-black"
                 />
             </form>
 
