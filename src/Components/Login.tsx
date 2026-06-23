@@ -10,7 +10,7 @@ const Login = () => {
 
     return (
         <div>
-            <form>
+            <form className="bg-sky-100">
            
                 <input 
                 type="text" 
