@@ -3,12 +3,11 @@ import { useState } from "react";
 const Login = () => {
   const [email, setEmail] = useState("");
 
-  const submithandler = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted");
-    console.log(email);
-  };
-
+const submithandler = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  console.log("Form submitted");
+  console.log(email);
+};
   return (
     <div>
       <form onSubmit={submithandler}>
