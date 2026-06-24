@@ -16,21 +16,19 @@ const Login = () => {
     console.log(passWord);
 
   };
-
-
-
+  
   return (
     <div>
-      <form 
-      onSubmit={submitHandler}
-      className="w-full max-w-md mx-auto bg-sky-100 p-6 sm:p-8 rounded-2xl shadow-lg flex flex-col gap-5"
+      <form
+        onSubmit={submitHandler}
+        className="w-full max-w-md mx-auto bg-sky-100 p-6 sm:p-8 rounded-2xl shadow-lg flex flex-col gap-5"
       >
-         <h2 className="text-2xl font-bold text-center text-gray-700">
-                    Welcome Back
-                </h2>
-                  <p className="text-center text-sm text-gray-500">
-                    Please sign in to continue
-                </p>
+        <h2 className="text-2xl font-bold text-center text-gray-700">
+          Welcome Back
+        </h2>
+        <p className="text-center text-sm text-gray-500">
+          Please sign in to continue
+        </p>
 
 
         <h1>Log In</h1>
@@ -44,7 +42,7 @@ const Login = () => {
         {/* <h2>{email}</h2> */}
 
         <input
-          className="border border-black"
+          className="w-full border border-gray-300 p-3 rounded-lg text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-400"
           type="password"
           placeholder="Enter password"
           value={passWord}
@@ -52,11 +50,19 @@ const Login = () => {
         />
         {/* <h2>{passWord}</h2> */}
         <button
-          className="bg-black text-white p-2 mt-5 rounded-2xl font-bold"
+          className="w-full bg-sky-500 text-white py-3 rounded-lg font-medium hover:bg-sky-600 active:scale-[0.98] transition"
           type="submit"
         >
           Submit the Data
         </button>
+
+        {/* Footer */}
+        <div className="text-center text-xs sm:text-sm text-gray-600">
+          Don’t have an account?{" "}
+          <span className="text-sky-600 font-medium cursor-pointer">
+            Sign up
+          </span>
+        </div>
       </form>
     </div>
   )
