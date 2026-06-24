@@ -1,33 +1,26 @@
-import { useState } from "react";
+import { useState } from "react"
+
 
 const Login = () => {
-  const [email, setEmail] = useState("");
+const [email, setEmail]= useState("");
 
-const submithandler = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  console.log("Form submitted");
-  console.log(email);
-};
+
+
   return (
     <div>
-      <form onSubmit={submithandler}>
-        <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="border border-black"
-          type="text"
-          placeholder="Enter Email"
+      <form>
+        <h1>Log In</h1>
+        <input 
+        className="border border-black"
+        type="email"
+        placeholder="Enter Email"
+        value={email}
+        onChange={(e)=>setEmail(e.target.value)}
         />
-
-        <button
-          className="m-5 p-1 bg-gray-300 border border-black rounded"
-          type="submit"
-        >
-          Submit
-        </button>
+        <h2>{email}</h2>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login
