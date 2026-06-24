@@ -33,9 +33,10 @@ const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
         />
         <h2>{passWord}</h2>
         <button
-        className="bg-bla"
+        className="bg-black text-white p-2 mt-5 rounded-2xl"
         type="submit"
-        ></button>
+        onSubmit={submitHandler(e)=>}
+        >Submit</button>
 
       </form>
     </div>
