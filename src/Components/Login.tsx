@@ -4,6 +4,9 @@ import { useState } from "react"
 const Login = () => {
 const [email, setEmail]= useState("");
 const [passWord, setpassWord]= useState("");
+const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+};
 
 
 
