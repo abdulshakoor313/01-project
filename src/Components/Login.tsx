@@ -32,10 +32,10 @@ const Login = () => {
         />
         {/* <h2>{passWord}</h2> */}
         <button
-          className="bg-black text-white p-2 mt-5 rounded-2xl"
+          className="bg-black text-white p-2 mt-5 rounded-2xl font-bold"
           type="submit"
         >
-          Submit
+          Submit the Data 
         </button>
       </form>
     </div>
