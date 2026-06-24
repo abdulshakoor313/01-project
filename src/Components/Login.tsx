@@ -32,6 +32,10 @@ const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
         onChange={(e)=>setpassWord(e.target.value)}
         />
         <h2>{passWord}</h2>
+        <button
+        className="bg-bla"
+        type="submit"
+        ></button>
 
       </form>
     </div>
