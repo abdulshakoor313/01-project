@@ -21,7 +21,16 @@ const Login = () => {
 
   return (
     <div>
-      <form onSubmit={submitHandler}>
+      <form 
+      onSubmit={submitHandler}
+      className="w-full max-w-md mx-auto bg-sky-100 p-6 sm:p-8 rounded-2xl shadow-lg flex flex-col gap-5"
+      >
+         <h2 className="text-2xl font-bold text-center text-gray-700">
+                    Welcome Back
+                </h2>
+
+
+                
         <h1>Log In</h1>
         <input
           className="border border-black"
