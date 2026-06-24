@@ -6,6 +6,8 @@ const Login = () => {
   const [passWord, setpassWord] = useState("");
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log(email)
+    console.log(passWord)
   };
 
   return (
@@ -19,7 +21,7 @@ const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <h2>{email}</h2>
+        {/* <h2>{email}</h2> */}
 
         <input
           className="border border-black"
@@ -28,7 +30,7 @@ const Login = () => {
           value={passWord}
           onChange={(e) => setpassWord(e.target.value)}
         />
-        <h2>{passWord}</h2>
+        {/* <h2>{passWord}</h2> */}
         <button
           className="bg-black text-white p-2 mt-5 rounded-2xl"
           type="submit"
