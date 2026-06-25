@@ -53,7 +53,7 @@ const Login = () => {
           className="w-full bg-sky-500 text-white py-3 rounded-lg font-medium hover:bg-sky-600 active:scale-[0.98] transition"
           type="submit"
         >
-          Submit the Data
+          Submit
         </button>
 
         {/* Footer */}
