@@ -4,13 +4,10 @@ const Login = () => {
   const [passWord, setpassWord] = useState("");
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-
     if (email === "" || passWord === "") {
       console.log("Email and Password are required");
       return;
     }
-
     console.log("Saved");
     console.log(email);
     console.log(passWord);
