@@ -14,9 +14,7 @@ const Login = () => {
     console.log("Saved");
     console.log(email);
     console.log(passWord);
-
   };
-
   return (
     <div>
       <form
