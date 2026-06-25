@@ -24,8 +24,6 @@ const Login = () => {
         <p className="text-center text-sm text-gray-500">
           Please sign in to continue
         </p>
-
-
         <h1>Log In</h1>
         <input
           className="w-full border border-gray-300 p-3 rounded-lg text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-400"
@@ -35,7 +33,6 @@ const Login = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         {/* <h2>{email}</h2> */}
-
         <input
           className="w-full border border-gray-300 p-3 rounded-lg text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-400"
           type="password"
