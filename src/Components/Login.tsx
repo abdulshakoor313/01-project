@@ -3,9 +3,11 @@ import { useState } from "react"
 const Login = () => {
   const [Email, setEmail] = useState("");
   const [passWord, setpassWord] = useState("");
+  
 
   return (
-    <div>
+    <form>
+          <div>
       <h1>Log In here</h1>
       <input
       className="w-full border border-gray-300 p-3 rounded-lg text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-400"
@@ -23,6 +25,7 @@ const Login = () => {
       value={passWord}
       />
     </div>
+    </form>
   )
 }
 
