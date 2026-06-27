@@ -3,7 +3,7 @@ import { useState } from "react"
 const Login = () => {
   const [Email, setEmail] = useState("");
   const [passWord, setpassWord] = useState("");
-  const submiithandler = (e:React.FormEvent.<HTMLFormElement>)=>{
+  const submiithandler = (e:React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
   }
 
