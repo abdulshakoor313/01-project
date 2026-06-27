@@ -34,3 +34,8 @@ const Login = () => {
 }
 
 export default Login
+
+
+git add . 
+git commit -am "......"
+git pull
