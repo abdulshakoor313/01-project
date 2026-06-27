@@ -17,7 +17,8 @@ const Login = () => {
       type="text"
       placeholder="Entr Email"
       value={Email}
-      onch
+      onChange={(e) => setEmail(e.target.value)}
+     
       
       />
 
