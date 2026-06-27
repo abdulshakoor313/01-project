@@ -17,7 +17,7 @@ const Login = () => {
       type="text"
       placeholder="Entr Email"
       value={Email}
-      
+      onch
       
       />
 
@@ -27,7 +27,7 @@ const Login = () => {
       placeholder="Password"
       value={passWord}
       />
-      
+
     </div>
     </form>
   )
