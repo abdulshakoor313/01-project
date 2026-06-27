@@ -7,6 +7,7 @@ const Login = () => {
   return (
     <div>
       <input
+      className="w-full border border-gray-300 p-3 rounded-lg text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-400"
       type="text"
       placeholder="Entr Email"
       value={Email}
@@ -15,7 +16,7 @@ const Login = () => {
       />
 
       <input
-      
+
       type="text"
       placeholder="Password"
       value={passWord}
