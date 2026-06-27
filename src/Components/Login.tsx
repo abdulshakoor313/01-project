@@ -3,10 +3,13 @@ import { useState } from "react"
 const Login = () => {
   const [Email, setEmail] = useState("");
   const [passWord, setpassWord] = useState("");
-  
+  const submiithandler = (e:React.FormEvent.<HTMLFormElement>)=>{
+    e.preventDefault();
+  }
+
 
   return (
-    <form>
+    <form onChange={submiithandler}>
           <div>
       <h1>Log In here</h1>
       <input
@@ -24,6 +27,7 @@ const Login = () => {
       placeholder="Password"
       value={passWord}
       />
+      
     </div>
     </form>
   )
