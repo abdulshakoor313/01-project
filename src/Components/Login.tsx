@@ -4,7 +4,7 @@ const Login = () => {
   const [Email, setEmail] = useState("");
   const [passWord, setpassWord] = useState("");
 
-  const submiithandler = (e: React.FormEvent<HTMLFormElement>) => {
+  const submithandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (Email.trim() === "") {
@@ -32,7 +32,7 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={submiithandler}>
+    <form onSubmit={submithandler}>
       <div>
         <h1>Log In here</h1>
         <input
