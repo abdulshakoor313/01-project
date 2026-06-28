@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 const Login = () => {
   const [Email, setEmail] = useState("");
@@ -29,20 +29,22 @@ const Login = () => {
 
     alert("Login Successful");
     console.log(Email, passWord);
+
+    setEmail("");
+    setpassWord("");
   };
 
   return (
     <form onSubmit={submithandler}>
       <div>
         <h1>Log In here</h1>
+
         <input
           className="w-full border border-gray-300 p-3 rounded-lg text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-400"
           type="text"
-          placeholder="Entr Email"
+          placeholder="Enter Email"
           value={Email}
           onChange={(e) => setEmail(e.target.value)}
-
-
         />
 
         <input
@@ -52,6 +54,7 @@ const Login = () => {
           value={passWord}
           onChange={(e) => setpassWord(e.target.value)}
         />
+
         <button
           className="w-full bg-sky-500 text-white py-3 rounded-lg font-medium hover:bg-sky-600 active:scale-[0.98] transition"
           type="submit"
@@ -59,11 +62,8 @@ const Login = () => {
           Submit
         </button>
       </div>
-
     </form>
-  )
-}
+  );
+};
 
-export default Login
-
-
+export default Login;
