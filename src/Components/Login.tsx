@@ -36,7 +36,7 @@ const Login = () => {
   return (
     <form onSubmit={submithandler}>
       <div>
-        <h1>Please Log In here</h1>
+        <h1 className="text-4xl">Please Log In here</h1>
 
         <input
           className="w-full border border-gray-300 p-3 rounded-lg text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-400"
