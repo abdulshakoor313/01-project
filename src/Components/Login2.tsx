@@ -1,19 +1,15 @@
 import { useState } from "react"
-const Login = () => {
-  const [email, setEmail] = useState("");
-  const [passWord, setpassWord] = useState("");
-  const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (email === "" || passWord === "") {
-      console.log("Email and Password are required");
-      return;
-    }
-    console.log("Saved");
-    console.log(email);
-    console.log(passWord);
-  };
+
+
+
+const Login2 = () => {
+    const [Email, setEmail] = useState("");
+    const [passWord, setpassWord] = useState("";
+    const submitHandler ()
+    )
   return (
-    <div>
+    
+<div>
       <form
         onSubmit={submitHandler}
         className="w-full max-w-md mx-auto bg-sky-100 p-6 sm:p-8 rounded-2xl shadow-lg flex flex-col gap-5"
@@ -59,4 +55,6 @@ const Login = () => {
     </div>
   )
 }
-export default Login
+
+export default Login2
+
