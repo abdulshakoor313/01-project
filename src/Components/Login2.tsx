@@ -2,10 +2,13 @@ import { useState } from "react"
 
 const Login2 = () => {
     const [email,setemail] = useState("");
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const submitHandler = (e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
+        setIsLoggedIn(true);
     }
-const [isLoggedIn, setIsLoggedIn] = useState(false);
+    
+
 return (
     <div>
         <form
@@ -30,7 +33,6 @@ return (
             <button
                 className="w-full bg-sky-500 text-white py-3 rounded-lg font-medium hover:bg-sky-600 active:scale-[0.98] transition"
                 type="submit"
-                onClick={(()=>setIsLoggedIn)}
             >
                 Submit
             </button>
