@@ -44,6 +44,7 @@ return (
                 </span>
             </div>
         </form>
+        {isLoggedIn && <h1>Login Successful</h1>}
     </div>
 )
 }
