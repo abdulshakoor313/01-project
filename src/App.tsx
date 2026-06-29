@@ -4,15 +4,16 @@
 // import Counter from './Components/Counter'
 // import MyCard from './Components/MyCard'
 // import UssseEffect from './Components/UssseEffect'
-import Login from "./Components/Login"
+// import Login from "./Components/Login"
+import Login2 from "./Components/Login2"
 
 
 
 function App() {
   return (
     <div className="flex flex-wrap justify-center items-center gap-6 bg-gray-100">
-
-      <Login/>
+      {/* <Login/> */}
+      <Login2/>
            
 {/*       
       <MyCard
