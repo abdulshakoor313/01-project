@@ -2,14 +2,11 @@ import { useState } from "react"
 
 const Login2 = () => {
     const [email,setemail] = useState("");
-    const [passWord, setpassWord] = useState("");
     const submitHandler = (e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
     }
-    
-
+const [isLoggedIn, setIsLoggedIn] = useState(false);
 return (
-
     <div>
         <form
             onSubmit={submitHandler}
@@ -30,21 +27,13 @@ return (
                 onChange={(e) => setemail(e.target.value)}
             />
             {/* <h2>{email}</h2> */}
-            <input
-                className="w-full border border-gray-300 p-3 rounded-lg text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-400"
-                type="password"
-                placeholder="Enter password"
-                value={passWord}
-                onChange={(e) => setpassWord(e.target.value)}
-            />
-            {/* <h2>{passWord}</h2> */}
             <button
                 className="w-full bg-sky-500 text-white py-3 rounded-lg font-medium hover:bg-sky-600 active:scale-[0.98] transition"
                 type="submit"
+                onClick={(()=>setIsLoggedIn)}
             >
                 Submit
             </button>
-
             {/* Footer */}
             <div className="text-center text-xs sm:text-sm text-gray-600">
                 Don’t have an account?{" "}
