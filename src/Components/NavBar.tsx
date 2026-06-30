@@ -3,14 +3,13 @@
 const NavBar = () => {
   return (
     <div>
-        <div className="flex items-center justify-around">
-            <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </div>
+        <header className="w-full shadow-md sticky top-0 z-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between items-center h-16">
+
+                </div>
+            </div>
+        </header>
     </div>
   )
 }
