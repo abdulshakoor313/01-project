@@ -5,17 +5,19 @@
 // import MyCard from './Components/MyCard'
 // import UssseEffect from './Components/UssseEffect'
 // import Login from "./Components/Login"
-import Login2 from "./Components/Login2"
+// import Login2 from "./Components/Login2"
+import Home from './Pages/Home'
 
 
 
 function App() {
   return (
     <div className="flex flex-wrap justify-center items-center gap-6 bg-gray-100">
-      {/* <Login/> */}
-      <Login2/>
-           
-{/*       
+      <Home/>
+
+
+      {/* <Login/> 
+      <Login2/>       
       <MyCard
       name="Abdul Shakoor"
       description="Frontend developer learning React"
