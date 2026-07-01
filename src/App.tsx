@@ -6,14 +6,14 @@
 // import UssseEffect from './Components/UssseEffect'
 // import Login from "./Components/Login"
 // import Login2 from "./Components/Login2"
-import Home from './Pages/Home'
 
+import ListRendering from "./Components/ListRendering";
 
 
 function App() {
   return (
     <div className="flex flex-wrap justify-center items-center gap-6 bg-gray-100">
-      <Home/>
+      <ListRendering/>
 
 
       {/* <Login/> 
