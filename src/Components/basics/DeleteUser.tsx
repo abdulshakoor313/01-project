@@ -21,7 +21,9 @@ const DeleteUser = () => {
           <h2>{user.name}</h2>
           <p>Age: {user.age}</p>
 
-          <button onClick={() => deleteUser(user.id)}>
+          <button 
+          className="p-4 text-2xl font-white border-2"
+          onClick={() => deleteUser(user.id)}>
             Delete
           </button>
         </div>
