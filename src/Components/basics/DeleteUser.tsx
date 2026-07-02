@@ -11,6 +11,7 @@ const DeleteUser = () => {
     const updatedUsers = users.filter((user) => user.id !== id);
     setUsers(updatedUsers);
   };
+  
 
   return (
     <div>
