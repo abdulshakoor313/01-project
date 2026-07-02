@@ -1,21 +1,33 @@
-import { useState } from "react"
+import { useState } from "react";
 
 const DeleteUser = () => {
-    const [users,  setusers] = useState([
-        {id:1, name:"Mehran", class: 2, section:"A" },
-        {id:2, name:"Anas", class: 5, section:"B" },
-        {id:3, name:"Onais", class: 1, section:"A" },
-        {id:4, name:"Ali", class: 4, section:"C" },
-    ])
-    const deleteUser = (id:number)=>{
-        const updateUsers = users.filter((user)=>user.id !==id);
-        setusers(updateUsers);
-    }
+  const [users, setUsers] = useState([
+    { id: 1, name: "Anas", age: 10 },
+    { id: 2, name: "Onais", age: 15 },
+    { id: 3, name: "Ali", age: 20 },
+  ]);
+
+  const deleteUser = (id: number) => {
+    const updatedUsers = users.filter((user) => user.id !== id);
+    setUsers(updatedUsers);
+  };
+
   return (
     <div>
-      
-    </div>
-  )
-}
+      <h1>User List</h1>
 
-export default DeleteUser
+      {users.map((user) => (
+        <div key={user.id}>
+          <h2>{user.name}</h2>
+          <p>Age: {user.age}</p>
+
+          <button onClick={() => deleteUser(user.id)}>
+            Delete
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default DeleteUser;
